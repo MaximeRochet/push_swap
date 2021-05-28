@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 13:26:50 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/25 14:43:17 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/05/25 16:49:14 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,6 +138,7 @@ int	ft_plsize(t_pile *pile)
 
 void print_pile(t_pile *pile)
 {
+	printf("\n");
 	while(pile)
 	{
 		printf("content = %d rank = %d\n" ,(*pile).content ,(*pile).rank);

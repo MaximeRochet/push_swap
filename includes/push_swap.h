@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:08:54 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/25 14:13:33 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/05/26 11:55:06 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,13 @@ t_pile *rank_pilea(t_pile *pile);
 int verif_doublons(t_pile *pile);
 t_pile *init_pilea(int ac, char**av);
 
+void s(t_pile **pile, char c);
+void ss(t_pile **pile, t_pile **pile_b);
+void p(t_pile **pile_un, t_pile **pile_deux, char c);
+void r(t_pile **pile, char c);
+void rr(t_pile **pile_a, t_pile **pile_b);
+void rrr(t_pile **pile, char c);
+void rrrab(t_pile **pile_a, t_pile **pile_b);
+
+void sort(t_pile **pile_a, t_pile **pile_b);
 #endif
