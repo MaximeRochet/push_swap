@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:06:42 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/28 13:38:17 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/05/28 13:52:55 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,3 @@ int main(int ac, char **av)
 	print_pile(pile_b);
 	return(0);
 }
-
-
