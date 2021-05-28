@@ -6,7 +6,7 @@
 #    By: mrochet <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/25 14:23:35 by mrochet           #+#    #+#              #
-#    Updated: 2021/05/28 13:32:29 by mrochet          ###   ########lyon.fr    #
+#    Updated: 2021/05/28 14:11:09 by mrochet          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,13 +17,13 @@ SRCS_NAME = init_pile_a.c lst.c \
 
 RM		=	rm -f
 CC		=	gcc
-#FSAN	=	-g -fsanitize=address
+FSAN	=	-g -fsanitize=address
 #CFLAGS	=	-Wall -Werror -Wextra
 
 ${NAME}:
 	@${CC} ${FSAN} ${SRCS_NAME} ${CFLAGS} -o ${NAME}
 	@echo "Compilation Succes !"
-	@./push_swap 1 2 3 4 5 0 9 6 8 7 11 10 
+	@./push_swap 74 66 6625 6 68 8623  3 1  4 8797  456 9 8 87 879 
 	
 all: ${NAME}
 
