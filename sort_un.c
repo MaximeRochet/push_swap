@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:55:30 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/28 14:09:25 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/05/28 14:15:38 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void sort(t_pile **pile_a,t_pile **pile_b)
 	}
 	while((*pile_b)->next)
 	{
+		print_pile(pile_b);
 		p(pile_b, pile_a, 'b');
 		dprintf(1,"test rank = %d \n", (*pile_b)->rank);	
 		pile_b = (*pile_b)->next;
