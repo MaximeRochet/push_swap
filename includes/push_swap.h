@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:08:54 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/26 11:55:06 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/01 13:57:40 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,7 @@ void rrr(t_pile **pile, char c);
 void rrrab(t_pile **pile_a, t_pile **pile_b);
 
 void sort(t_pile **pile_a, t_pile **pile_b);
+void sort_deux(t_pile **pile_a, t_pile **pile_b);
+void direction_num(t_pile**, char ,int);
+void direction_inter(t_pile**, char ,int, int);
 #endif

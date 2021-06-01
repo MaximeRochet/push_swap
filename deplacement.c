@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 15:07:42 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/25 18:38:02 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/05/31 16:31:09 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,9 @@ void r(t_pile **pile, char c)
 	(*tmp).next = NULL;
 
 	if(c == 'a')
-		printf("pa\n");
+		printf("ra\n");
 	if(c =='b')
-		printf("pb\n");
+		printf("rb\n");
 }
 
 void rr(t_pile **pile_a, t_pile **pile_b)
@@ -91,9 +91,9 @@ void rrr(t_pile **pile, char c)
 	(*tmp).next = NULL;
 
 	if(c == 'a')
-		printf("pa\n");
+		printf("rra\n");
 	if(c =='b')
-		printf("pb\n");
+		printf("rrb\n");
 
 }
 

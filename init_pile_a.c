@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:15:43 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/25 14:42:47 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/01 14:43:14 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ t_pile *create_pilea(int ac, char**av, t_pile *pile_a)
 		while(av[y][i++])
 		{
 			ft_pladd_back(&pile_a, ft_plnew(ft_atoi(av[y] + i-1), -1));
-			while(ft_isdigit(av[y][i]) && av[y][i])
+
+			while((ft_isdigit(av[y][i]) || av[y][i] == '-' ) && av[y][i])
 				i++;
 			while(av[y][i] == 32 && av[y][i])
 				i++;

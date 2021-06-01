@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:06:42 by mrochet           #+#    #+#             */
-/*   Updated: 2021/05/31 12:57:26 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/01 14:28:10 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,30 @@ int main(int ac, char **av)
 	t_pile *pile_b;
 
 	pile_a = init_pilea(ac, av);
+	pile_b = NULL;
 	
-	printf("pile A");
-	print_pile(pile_a);
-	printf("pile B");
-	print_pile(pile_b);
-
 	if(!pile_a)
 		return(0);
 	pile_b = NULL;
+
+/*	printf("pile A");
+	print_pile(pile_a);
+	printf("pile B");
+	print_pile(pile_b);
+*/
 	sort(&pile_a, &pile_b);
 	
+/*	printf("pile A");
+	print_pile(pile_a);
+	printf("pile B");
+	print_pile(pile_b);
+*/	
+	sort_deux(&pile_a, &pile_b);
+/*
 	printf("pile A");
 	print_pile(pile_a);
 	printf("pile B");
 	print_pile(pile_b);
-	
+*/	
 	return(0);
 }
