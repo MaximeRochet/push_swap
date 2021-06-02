@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:06:42 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/01 14:28:10 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/02 18:17:44 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,24 +24,26 @@ int main(int ac, char **av)
 		return(0);
 	pile_b = NULL;
 
-/*	printf("pile A");
+	printf("pile A");
 	print_pile(pile_a);
 	printf("pile B");
 	print_pile(pile_b);
-*/
-	sort(&pile_a, &pile_b);
+
+//	sort(&pile_a, &pile_b);
 	
 /*	printf("pile A");
 	print_pile(pile_a);
 	printf("pile B");
 	print_pile(pile_b);
 */	
-	sort_deux(&pile_a, &pile_b);
+//	sort_deux(&pile_a, &pile_b);
+	small_sort(&pile_a);
 /*
 	printf("pile A");
 	print_pile(pile_a);
 	printf("pile B");
 	print_pile(pile_b);
-*/	
+*/
+	
 	return(0);
 }

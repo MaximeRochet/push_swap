@@ -6,7 +6,7 @@
 #    By: mrochet <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/25 14:23:35 by mrochet           #+#    #+#              #
-#    Updated: 2021/06/01 14:26:10 by mrochet          ###   ########lyon.fr    #
+#    Updated: 2021/06/02 18:17:22 by mrochet          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = push_swap
 SRCS_NAME = init_pile_a.c lst.c \
 			main.c	parsing.c \
 			deplacement.c sort_un.c sort_deux.c libft.a\
+			small_sort.c
 
 RM		=	rm -f
 CC		=	gcc
