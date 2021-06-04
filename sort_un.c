@@ -6,36 +6,24 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:55:30 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/02 14:12:47 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 14:51:07 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/push_swap.h"
-/*
-int is_sort(t_pile **pile)
-{
-	while(*pile)
-	{
-		*pile = (*pile)->next
-		if((*pile)->content < (*pile)->(*next)->content)
-			return(0);
-	}
-	return(1);
-}
-*/
 
-void	direction_num(t_pile **pile, char c ,int rank)
+void	direction_num(t_pile **pile, char c, int rank)
 {
-	int i;	
-	t_pile *tmp;
-	int size;
+	int		i;
+	t_pile	*tmp;
+	int		size;
 
 	size = ft_plsize(*pile);
 	tmp = *pile;
 	i = 0;
-	while((*pile)->rank != rank)
+	while ((*pile)->rank != rank)
 	{
-		(*pile) =  (*pile)->next;
+		(*pile) = (*pile)->next;
 		i++;
 	}
 	*pile = tmp;
@@ -45,26 +33,26 @@ void	direction_num(t_pile **pile, char c ,int rank)
 		rrr(pile, c);
 }
 
-void direction_inter(t_pile **pile, char c ,int debut, int fin)
+void	direction_inter(t_pile **pile, char c, int debut, int fin)
 {
-	int i;
-	int j;
-	int size;
-	t_pile *tmp;
-	
+	int		i;
+	int		j;
+	int		size;
+	t_pile	*tmp;
+
 	tmp = *pile;
 	i = 0;
-	while(*pile && ((*pile)->rank < debut || (*pile)->rank > fin))
+	while (*pile && ((*pile)->rank < debut || (*pile)->rank > fin))
 	{
-		(*pile) =  (*pile)->next;
+		(*pile) = (*pile)->next;
 		i++;
 	}
 	size = i;
-	while(*pile)
+	while (*pile)
 	{
-		if((*pile)->rank >= debut && (*pile)->rank <= fin)
-			j= i + size;
-		(*pile) =  (*pile)->next;
+		if ((*pile)->rank >= debut && (*pile)->rank <= fin)
+			j = i + size;
+		(*pile) = (*pile)->next;
 		size++;
 	}
 	*pile = tmp;
@@ -74,29 +62,30 @@ void direction_inter(t_pile **pile, char c ,int debut, int fin)
 		rrr(pile, c);
 }
 
-void sort(t_pile **pile_a,t_pile **pile_b)
+void	sort(t_pile **pile_a, t_pile **pile_b)
 {
-	int size;
-	int div;
-	int rank;
-	int section;
+	int	size;
+	int	div;
+	int	rank;
+	int	section;
 
 	size = ft_plsize((*pile_a));
-	div = ((size < 100)*4 + !(size < 100)*5);
+	div = ((size < 100) * 4 + !(size < 100) * 5);
 	rank = 1;
 	section = 1;
 	while ((*pile_a))
 	{
-		while(rank <= (size/div)*section && rank <= size )
+		while (rank <= (size / div) * section && rank <= size)
 		{
-			if((*pile_a)->rank >= (((size / div)*section) - (size / div)) && \
-					(*pile_a)->rank <= (size / div)*section && *pile_a)
+			if ((*pile_a)->rank >= (((size / div) * section) - (size / div)) && \
+				(*pile_a)->rank <= (size / div) * section && *pile_a)
 			{
 				p(pile_a, pile_b, 'a');
 				rank++;
 			}
 			else if (*pile_a)
-				direction_inter(pile_a,'a',((size / div)*section) - (size / div), (size / div)*section);
+				direction_inter(pile_a, 'a', ((size / div) * section) - \
+						(size / div), (size / div) * section);
 		}
 		section++;
 	}

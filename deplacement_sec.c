@@ -1,30 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_deux.c                                        :+:      :+:    :+:   */
+/*   deplacement_sec.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/31 18:33:15 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:25:29 by mrochet          ###   ########lyon.fr   */
+/*   Created: 2021/06/04 14:47:22 by mrochet           #+#    #+#             */
+/*   Updated: 2021/06/04 14:47:54 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/push_swap.h"
 
-void	sort_deux(t_pile **pile_a, t_pile **pile_b)
+void	rrr(t_pile **pile, char c)
 {
-	int	rank;
+	t_pile	*tmp;
 
-	rank = ft_plsize(*(pile_b));
-	while ((*pile_b) && rank)
-	{
-		if ((*pile_b)->rank == rank)
-		{
-			p(pile_b, pile_a, 'b');
-			rank --;
-		}
-		else
-			direction_num(pile_b, 'b', rank);
-	}
+	tmp = (*pile);
+	(*pile) = ft_pllast((*pile));
+	(*pile)->next = tmp;
+	while ((*tmp).next != (*pile))
+		tmp = (*tmp).next;
+	(*tmp).next = NULL;
+	if (c == 'a')
+		printf("rra\n");
+	if (c == 'b')
+		printf("rrb\n");
+}
+
+void	rrrab(t_pile **pile_a, t_pile **pile_b)
+{
+	rrr(pile_a, 'c');
+	rrr(pile_b, 'c');
+	printf("rrr\n");
 }
