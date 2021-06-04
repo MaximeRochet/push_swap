@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 18:07:08 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 15:18:00 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 16:15:31 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,6 @@ void	small_sort(t_pile **pile_a, t_pile **pile_b)
 		s(pile_a, 'a');
 	if (size == 3 && !is_sort((*pile_a)))
 		small_sort_trois(pile_a, 1);
-	if (size == 4 && !is_sort((*pile_a)))
-		small_sort_sec(pile_a, pile_b);
-	if (size == 5 && !is_sort((*pile_a)))
+	if (size > 3 && !is_sort((*pile_a)))
 		small_sort_sec(pile_a, pile_b);
 }

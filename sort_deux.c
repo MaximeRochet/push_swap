@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 18:33:15 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:25:29 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 16:20:35 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	sort_deux(t_pile **pile_a, t_pile **pile_b)
 	{
 		if ((*pile_b)->rank == rank)
 		{
-			p(pile_b, pile_a, 'b');
+			p(pile_b, pile_a, 'a');
 			rank --;
 		}
 		else

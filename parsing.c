@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:18:11 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:36:14 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 16:39:07 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_char_isdigit(char *str)
 	i = -1;
 	while (str[++i])
 	{
-		if ((!ft_isdigit(str[i]) && str[i] != 32) || (str[i] == '-' \
-					&& str[i - 1] != ' ' && !ft_isdigit(str[i + 1])))
+		if ((!ft_isdigit(str[i]) && str[i] != 32) || (str[i] == '-' && \
+					((str[i - 1] != ' ') || !ft_isdigit(str[i + 1]))))
 			return (0);
 	}
 	return (1);

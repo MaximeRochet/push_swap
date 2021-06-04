@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:55:30 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:51:07 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 16:20:24 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	sort(t_pile **pile_a, t_pile **pile_b)
 			if ((*pile_a)->rank >= (((size / div) * section) - (size / div)) && \
 				(*pile_a)->rank <= (size / div) * section && *pile_a)
 			{
-				p(pile_a, pile_b, 'a');
+				p(pile_a, pile_b, 'b');
 				rank++;
 			}
 			else if (*pile_a)

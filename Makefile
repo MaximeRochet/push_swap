@@ -6,7 +6,7 @@
 #    By: mrochet <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/04 15:11:20 by mrochet           #+#    #+#              #
-#    Updated: 2021/06/04 15:11:25 by mrochet          ###   ########lyon.fr    #
+#    Updated: 2021/06/04 16:23:19 by mrochet          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ CFLAGS = -Wall -Werror -Wextra
 LIB_FT = libft/libft.a
 
 %.o: %.c push_swap.h./
-			@$(CC) ${CFLAGS}  -Imlx -c $< -o $@ -fsanitize=address -g3
+			@$(CC) ${CFLAGS}  -c $< -o $@ -fsanitize=address -g3
 
 all : $(NAME)
 $(NAME): ${OBJS} librairies
