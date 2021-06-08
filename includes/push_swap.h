@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:08:54 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 11:50:12 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 13:29:56 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ t_pile	*ft_plnew(int content, int rank);
 int		ft_plsize(t_pile *pile);
 void	print_pile(t_pile *pile);
 void	free_pile(t_pile **pile);
-
 
 int		ft_char_isdigit(char *str);
 t_pile	*create_pilea(int ac, char**av, t_pile *pile_a);

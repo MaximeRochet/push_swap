@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 13:26:50 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:11:33 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 13:23:49 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,38 +39,11 @@ void	ft_pladd_front(t_pile **alst, t_pile *new)
 	}
 }
 
-void	ft_pldelone(t_pile *pile, void (*del)(int))
-{
-	if (pile)
-	{
-		(*del)(pile->content);
-		(*del)(pile->rank);
-		free(pile);
-	}
-}
-
-void	ft_plclear(t_pile **pile, void (*del)(int))
-{
-	t_pile	*tmp;
-
-	if (pile)
-	{
-		while (*pile)
-		{
-			tmp = (*pile)->next;
-			ft_pldelone(*pile, del);
-			(*pile) = tmp;
-		}
-	}
-}
-
 t_pile	*ft_pllast(t_pile *pile)
 {
 	if (!pile)
 		return (NULL);
 	while (pile->next)
-	{
 		pile = pile->next;
-	}
 	return (pile);
 }
