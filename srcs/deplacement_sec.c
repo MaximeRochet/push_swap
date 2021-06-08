@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 14:47:22 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:47:54 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:26:33 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 void	rrr(t_pile **pile, char c)
 {

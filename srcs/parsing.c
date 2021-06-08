@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:18:11 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 13:27:59 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:27:47 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 void	free_tab(char **tab)
 {

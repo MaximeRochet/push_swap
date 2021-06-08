@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 13:26:50 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 13:23:49 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:26:55 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 void	ft_pladd_back(t_pile **apile, t_pile *new)
 {

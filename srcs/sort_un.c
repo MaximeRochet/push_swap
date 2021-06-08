@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:55:30 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 16:20:24 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:28:34 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 void	direction_num(t_pile **pile, char c, int rank)
 {

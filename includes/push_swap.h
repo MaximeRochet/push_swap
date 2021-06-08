@@ -6,14 +6,14 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 10:08:54 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 13:29:56 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:30:33 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "libft.h"
+# include "../libft/libft.h"
 # include <stdio.h>
 # include <limits.h>
 

@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 18:33:15 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 16:20:35 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:28:22 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 void	sort_deux(t_pile **pile_a, t_pile **pile_b)
 {

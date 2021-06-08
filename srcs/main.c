@@ -6,15 +6,16 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 18:07:35 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 13:26:25 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:32:31 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 int	main(int ac, char **av)
 {
 	t_pile	*pile_a;
+	t_pile	*pile_b;
 	int		size;
 
 	pile_a = init_pilea(ac, av);

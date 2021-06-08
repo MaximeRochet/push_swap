@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 18:07:08 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/07 13:38:02 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:28:11 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 int	is_sort(t_pile *pile)
 {

@@ -6,11 +6,11 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 14:10:26 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 13:24:56 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 14:27:04 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "push_swap.h"
 
 t_pile	*ft_plnew(int content, int rank)
 {
