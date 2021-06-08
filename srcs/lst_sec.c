@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 14:10:26 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 14:48:42 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 11:51:38 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_pile	*ft_plnew(int content, int rank)
 {
 	t_pile	*new_elem;
 
-	new_elem = calloc(sizeof(t_pile), 1);
+	new_elem = ft_calloc(sizeof(t_pile), 1);
 	if (!(new_elem))
 		return (0);
 	(*new_elem).content = content;
@@ -46,4 +46,17 @@ void	print_pile(t_pile *pile)
 		printf("content = %d rank = %d\n", (*pile).content, (*pile).rank);
 		pile = (*pile).next;
 	}
+}
+
+void free_pile(t_pile **pile)
+{
+	t_pile *tmp;
+
+	while(*pile)
+	{
+		tmp = (*pile);
+		free((*pile));
+		(*pile) = (*tmp).next;
+	}
+	(*pile) = NULL;
 }

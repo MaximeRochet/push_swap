@@ -6,17 +6,17 @@
 /*   By: cmasse <cmasse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/24 17:02:14 by cmasse            #+#    #+#             */
-/*   Updated: 2021/06/04 16:46:01 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 18:14:54 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long long int	ft_atolli(char *str)
 {
 	int				i;
 	int				sign;
-	unsigned int	nb;
+	long long int	nb;
 
 	sign = 1;
 	nb = 0;

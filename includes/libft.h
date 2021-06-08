@@ -6,7 +6,7 @@
 /*   By: cmasse <cmasse@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/24 17:25:50 by cmasse            #+#    #+#             */
-/*   Updated: 2021/05/17 13:32:43 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/04 18:19:27 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 char				*ft_strnstr(const char *haystack, const char *needle, \
 size_t len);
 int					ft_atoi(const char *str);
+long long int		ft_atolli(char *str);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *src);
 char				*ft_strrchr(const char *s, int c);

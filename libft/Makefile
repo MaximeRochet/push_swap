@@ -6,7 +6,7 @@
 #    By: mrochet <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/02 16:01:43 by mrochet           #+#    #+#              #
-#    Updated: 2020/12/02 16:34:03 by mrochet          ###   ########lyon.fr    #
+#    Updated: 2021/06/04 18:11:38 by mrochet          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRCS = ft_memset.c ft_bzero.c\
 	   ft_strmapi.c ft_putchar_fd.c \
 	   ft_putstr_fd.c ft_putendl_fd.c \
 	   ft_split.c ft_itoa.c \
-	   ft_putnbr_fd.c ft_lstadd_front.c
+	   ft_putnbr_fd.c ft_lstadd_front.c \
+	   ft_atolli.c
 
 BONUS = ft_lstsize.c ft_lstlast.c \
 		ft_lstadd_back.c ft_lstdelone.c \

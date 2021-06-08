@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:15:43 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/04 16:40:46 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/08 12:03:41 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,14 +99,15 @@ t_pile	*init_pilea(int ac, char**av)
 	{
 		if (!ft_char_isdigit(av[y]))
 		{
-			printf("Error1\n");
+			printf("Error\n");
 			return (NULL);
 		}
 	}
 	pile = create_pilea(ac, av, pile);
 	if (!verif_doublons(pile))
 	{
-		printf("Error_doublons\n");
+		free_pile(&pile);
+		printf("Error\n");
 		return (NULL);
 	}
 	pile = rank_pilea(pile);
