@@ -6,7 +6,7 @@
 /*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:55:30 by mrochet           #+#    #+#             */
-/*   Updated: 2021/06/08 14:28:34 by mrochet          ###   ########lyon.fr   */
+/*   Updated: 2021/06/29 15:17:48 by mrochet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	sort(t_pile **pile_a, t_pile **pile_b)
 	int	section;
 
 	size = ft_plsize((*pile_a));
-	div = ((size < 100) * 4 + !(size < 100) * 5);
+	div = ((size < 100) * 4 + !(size < 100) * 10);
 	rank = 1;
 	section = 1;
 	while ((*pile_a))
